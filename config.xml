@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<widget id="com.example.byt" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="io.github.ivanrave.masterpodbor" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <!--https://developer.android.com/guide/topics/manifest/manifest-element.html#package-->
+    <!--A full Java-language-style package name for the application. 
+    The name should be unique. The name may contain uppercase or lowercase letters 
+    ('A' through 'Z'), numbers, and underscores ('_'). 
+    However, individual package name parts may only start with letters.-->
+
+    <!--Caution: Once you publish your application, 
+        you cannot change the package name. 
+        The package name defines your application's identity, 
+        so if you change it, then it is considered to be a different application 
+        and users of the previous version cannot update to the new version.-->
     <!--https://raw.githubusercontent.com/phonegap/phonegap-start/master/www/config.xml-->
     <name>MasterPodbor</name>
     <description>
@@ -23,7 +34,14 @@
     <gap:plugin name="org.apache.cordova.console" source="plugins.cordova.io" />
     <!--https://build.phonegap.com/plugins/1169-->
     <gap:plugin name="org.apache.cordova.inappbrowser" source="plugins.cordova.io" />
-
+    <gap:plugin name="org.apache.cordova.geolocation" source="plugins.cordova.io" />
+    <gap:plugin name="org.apache.cordova.splashscreen" source="plugins.cordova.io" />
+    <gap:plugin name="nl.x-services.plugins.googleplus" version="1.0.7" />
+    <!--<gap:plugin name="com.ccsoft.plugin.cordovafacebook" source="plugins.cordova.io" />-->
+    <!--<gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.11.0">-->
+    <!--    <param name="APP_ID" value="729392400468124" />-->
+    <!--    <param name="APP_NAME" value="vmg-web" />-->
+    <!--</gap:plugin>-->
     <!--<feature name="InAppBrowser">-->
     <!--    <param name="ios-package" value="CDVInAppBrowser" />-->
     <!--    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />-->
@@ -60,7 +78,7 @@
     <!-- ios: if set to true, app will terminate when home button is pressed -->
     <preference name="show-splash-screen-spinner" value="true" />
     <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
-    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="auto-hide-splash-screen" value="false" />
     <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
     <preference name="disable-cursor" value="false" />
     <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
@@ -113,3 +131,9 @@
     <!--http://docs.build.phonegap.com/en_US/configuring_basics.md.html#The%20Basics-->
     <gap:platform name="android" />
 </widget>
+
+<!--
+keytool -exportcert -alias anddebugkey -keystore D:/keys/mydebug.keystore -list -v
+http://docs.build.phonegap.com/en_US/signing_signing-android.md.html
+https://developers.google.com/+/quickstart/android
+-->
