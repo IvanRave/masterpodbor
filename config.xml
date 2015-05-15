@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8' ?>
-<widget id="io.github.ivanrave.masterpodbor" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="io.github.ivanrave.masterpodbor" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <!--https://developer.android.com/guide/topics/manifest/manifest-element.html#package-->
     <!--A full Java-language-style package name for the application. 
     The name should be unique. The name may contain uppercase or lowercase letters 
@@ -19,7 +19,6 @@
     <author email="masterpodbor@gmail.com">
         MasterPodbor Team
     </author>
-    <content src="index-andr.html" />
     <access origin="*" />
     <!--<access origin="*.firebaseio.*" />-->
     <!--<access origin="https://auth.firebase.com" />-->
